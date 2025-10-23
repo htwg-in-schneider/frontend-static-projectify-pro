@@ -1,0 +1,49 @@
+/* Globale Variablen (vorher variables.css) */
+:root {
+    --primary-gradient: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    --primary-color: #6a11cb;
+    --secondary-color: #2575fc;
+}
+
+/* Haupt-Styling (vorher style.css) */
+.hero-section-bg {
+    background-image: var(--primary-gradient);
+    color: white;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    overflow: hidden;
+}
+
+.floating-cta {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1030;
+    cursor: pointer;
+    text-align: center;
+}
+.floating-cta img {
+    max-width: 100px;
+    transition: transform 0.2s ease-in-out;
+}
+.floating-cta:hover img {
+    transform: scale(1.1);
+}
+.floating-cta span {
+    display: block;
+    background: white;
+    border-radius: 10px;
+    padding: 2px 8px;
+    font-size: 0.8rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-bottom: 5px;
+}
+
+.content-overlap {
+    position: relative;
+    z-index: 2;
+}
+
+.main-content-box {
+    margin-top: -80px;
+}
