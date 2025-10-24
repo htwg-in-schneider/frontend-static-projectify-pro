@@ -1,14 +1,15 @@
-:root {
-    --primary-gradient: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    --primary-color: #6a11cb;
-    --secondary-color: #2575fc;
+main {
+    background-image: url('../assets/img/hintergrund.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
 }
 
 .hero-section-bg {
-    background-image: var(--primary-gradient);
-    color: white;
     border-bottom-left-radius: 50% 20%;
     border-bottom-right-radius: 50% 20%;
+    background-color: white;
     overflow: hidden;
 }
 
@@ -30,5 +31,6 @@
 }
 
 .main-content-box {
-    margin-top: -80px;
+    margin-top: 0px;
+    
 }
